@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Suspense, useContext, useState } from "react";
-import { HomeAsync } from "./pages/Home/HomeAsync";
-import { AboutAsync } from "./pages/About/AboutLazy";
+import { Suspense } from "react";
+import { classNames } from "helpers/classNames";
+import { useTheme } from "app/providers/ThemeProvider";
+
 import "./styles/index.scss";
-import { useTheme } from "./theme/useTheme";
-import { classNames } from "./helpers/classNames";
+import { Home } from "pages/Home";
+import { About } from "pages/About";
 
 export default function App() {
   const { theme, toggleTheme } = useTheme();
@@ -18,8 +19,8 @@ export default function App() {
       </nav>
       <Suspense fallback={"loading"}>
         <Routes>
-          <Route path="/" element={<HomeAsync />} />
-          <Route path="/about" element={<AboutAsync />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Suspense>
     </div>
