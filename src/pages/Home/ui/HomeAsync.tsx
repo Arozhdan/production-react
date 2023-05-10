@@ -1,3 +1,3 @@
-import { lazy } from "react";
+import { lazy } from 'react';
 
-export const HomeAsync = lazy(() => import("./Home"));
+export const HomeAsync = lazy(() => import('./Home'));
