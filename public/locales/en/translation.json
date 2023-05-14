@@ -1,4 +1,9 @@
 {
   "language": "English",
-  "home": "Home"
+  "home": "Home",
+  "notFound": "Not Found",
+  "pageNotFound": "Page not found",
+  "about": "About",
+  "unexpectedError": "Unexpected Error",
+  "reload": "Reload"
 }

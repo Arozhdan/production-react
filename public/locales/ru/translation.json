@@ -1,4 +1,8 @@
 {
   "language": "Русский",
-  "home": "Главная"
+  "home": "Главная",
+  "notFound": "Не найдено",
+  "pageNotFound": "Страница не найдена",
+  "unexpectedError": "Ошибка",
+  "reload": "Обновить"
 }
